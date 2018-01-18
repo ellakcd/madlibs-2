@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <title>Create a MadLib!</title>
+</head>
+<body>
+    <form action="/madlib" method="POST">
+        <p>Person's name: <input type="text" name="person"></p>
+        <p>Color: <input type="text" name="color"></p>
+        <p>Noun: <input type="text" name="noun"></p>
+        <p>Adjective: <input type="text" name="adjective"></p>
+        <p>Pick some animals:</p>
+        <p><input type="checkbox" name="animals" value="kittens"> Kittens</p>
+        <p><input type="checkbox" name="animals" value="unicorns" checked> Unicorns</p>
+        <p><input type="checkbox" name="animals" value="puppies"> Puppies</p>
+        <p><input type="checkbox" name="animals" value="ferrets"> Ferrets</p>
+        <p><input type="checkbox" name="animals" value="sealions" disabled> Sea Lions</p>
+        <input type="submit" value="Create MadLib!">
+    </form>
+</body>
+</html>

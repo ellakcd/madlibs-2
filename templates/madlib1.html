@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block madlib %}
+        There once was a {{ color }} {{ noun }} sitting in the Hackbright Lab. When {{ person }} went to pick it up, it burst into flames in a totally {{ adjective }} way. {{ person }} was then joined by a bunch of 
+
+        {% if animals|length > 1 %}
+            {% for animal in animals %} 
+            {{animal}}, 
+            {% endfor %} 
+            and {{ last_animal }}
+        {% else %}
+        {{last_animal}}
+        {% endif %}
+        .
+{% endblock %}
