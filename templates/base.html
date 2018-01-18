@@ -1,11 +1,11 @@
 <!doctype html>
 <html>
 <head>
-    <link rel="stylesheet" href="/static/madlibs.css">
+    {% block CSS %} CSS LINK HERE {% endblock %}
     <title>MadLib!</title>
 </head>
 <body>
-    <div class="madlib">
+    <div class="madlib" style="background-color:{{ color }}">
         {% block madlib %} MADLIB HERE {% endblock %}
     </div>
 </body>

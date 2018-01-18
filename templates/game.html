@@ -2,11 +2,14 @@
 <html>
 <head>
     <title>Create a MadLib!</title>
+    <link rel="stylesheet" href="/static/other.css">
 </head>
 <body>
     <form action="/madlib" method="POST">
         <p>Person's name: <input type="text" name="person"></p>
-        <p>Color: <input type="text" name="color"></p>
+        <p>Color: <p><input type="radio" name="color" value="blue">Blue</p></p>
+        <p><input type="radio" name="color" value="purple">Purple</p>
+        <p><input type="radio" name="color" value="red">Red</p>
         <p>Noun: <input type="text" name="noun"></p>
         <p>Adjective: <input type="text" name="adjective"></p>
         <p>Pick some animals:</p>
